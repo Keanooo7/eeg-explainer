@@ -1,0 +1,11 @@
+name: eeg-explainer
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.10
+  - pip
+  - numpy=1.26.4
+  - pytorch::pytorch>=2.1     # >=2.1 avoids the torch 2.0 MPS SIGBUS on Apple Silicon
+  - pip:
+    - mne>=1.6

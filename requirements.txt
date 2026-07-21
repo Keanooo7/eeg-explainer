@@ -1,0 +1,9 @@
+# EEG explainer — model + asset export (Communication track)
+# Python 3.10.  Install with:  pip install -r requirements.txt
+#
+# Versions below are the ones this repo was verified against (macOS / Apple
+# Silicon). torch>=2.1 is recommended: torch 2.0.0's MPS backend can SIGBUS on
+# this model's backward pass — use `--device cpu` if you're stuck on 2.0.x.
+torch>=2.0
+numpy>=1.22,<2.0
+mne>=1.6
